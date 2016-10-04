@@ -1,0 +1,95 @@
+---
+title: "Delete Table"
+ms.custom: na
+ms.date: 2016-06-29
+ms.prod: azure
+ms.reviewer: na
+ms.service: storage
+ms.suite: na
+ms.tgt_pltfrm: na
+ms.topic: reference
+ms.assetid: 49ba4683-9dcc-409a-9af4-8aba29cad162
+caps.latest.revision: 41
+author: tamram
+manager: carolz
+translation.priority.mt: 
+  - de-de
+  - es-es
+  - fr-fr
+  - it-it
+  - ja-jp
+  - ko-kr
+  - pt-br
+  - ru-ru
+  - zh-cn
+  - zh-tw
+---
+# Delete Table
+The `Delete Table` operation deletes the specified table and any data it contains.  
+  
+## Request  
+ The `Delete Table` request may be constructed as follows. HTTPS is recommended. Replace *myaccount* with the name of your storage account, and *mytable* with the name of the table to be deleted:  
+  
+|Method|Request URI|HTTP Version|  
+|------------|-----------------|------------------|  
+|`DELETE`|`https://myaccount.table.core.windows.net/Tables('mytable')`|HTTP/1.1|  
+  
+### Emulated Storage Service URI  
+ When making a request against the emulated storage service, specify the emulator hostname and Table service port as `127.0.0.1:10002`, followed by the emulated storage account name:  
+  
+|Method|Request URI|HTTP Version|  
+|------------|-----------------|------------------|  
+|`DELETE`|`http://127.0.0.1:10002/devstoreaccount1/Tables('mytable')`|HTTP/1.1|  
+  
+ The Table service in the emulated storage service differs from the Windows® Azure™ Table service in several ways. For more information, see [Differences Between the Storage Emulator and Azure Storage Services](assetId:///c60f2090-c0f4-4817-8559-e98786461dbe).  
+  
+### URI Parameters  
+ None.  
+  
+### Request Headers  
+ The request must include the `Authorization` header and either the `Date` or `x-ms-date` header, as specified in [Authentication for the Azure Storage Services](../StorageServicesREST/Authentication-for-the-Azure-Storage-Services.md). Additional headers are described in the following table.  
+  
+|Request header|Description|  
+|--------------------|-----------------|  
+|`Authorization`|Required. Specifies the authentication scheme, account name, and signature. For more information, see [Authentication for the Azure Storage Services](../StorageServicesREST/Authentication-for-the-Azure-Storage-Services.md).|  
+|`Date` or `x-ms-date`|Required. Specifies the Coordinated Universal Time (UTC) for the request. For more information, see [Authentication for the Azure Storage Services](../StorageServicesREST/Authentication-for-the-Azure-Storage-Services.md).|  
+|`x-ms-version`|Optional. Specifies the version of the operation to use for this request. For more information, see [Versioning for the Azure Storage Services](../StorageServicesREST/Versioning-for-the-Azure-Storage-Services.md).|  
+|`Content-Type`|Required. Specifies the content type of the payload. Possible values are:<br /><br /> -   `application/atom+xml` (versions prior to 2015-12-11 only)<br />-   `application/json`<br /><br /> For more information, see [Payload Format for Table Service Operations](../StorageServicesREST/Payload-Format-for-Table-Service-Operations.md).|  
+|`x-ms-client-request-id`|Optional. Provides a client-generated, opaque value with a 1 KB character limit that is recorded in the analytics logs when storage analytics logging is enabled. Using this header is highly recommended for correlating client-side activities with requests received by the server. For more information, see [About Storage Analytics Logging](../StorageServicesREST/About-Storage-Analytics-Logging.md) and [Azure Logging: Using Logs to Track Storage Requests](http://blogs.msdn.com/b/windowsazurestorage/archive/2011/08/03/windows-azure-storage-logging-using-logs-to-track-storage-requests.aspx).|  
+  
+### Request Body  
+ None.  
+  
+## Response  
+ The response includes an HTTP status code and a set of response headers.  
+  
+### Status Code  
+ A successful operation returns status code 204 (No Content).  
+  
+ For information about status codes, see [Status and Error Codes](../StorageServicesREST/Status-and-Error-Codes2.md) and [Table Service Error Codes](../StorageServicesREST/Table-Service-Error-Codes.md).  
+  
+### Response Headers  
+ The response for this operation includes the following headers. The response may also include additional standard HTTP headers. All standard headers conform to the [HTTP/1.1 protocol specification](http://go.microsoft.com/fwlink/?linkid=150478).  
+  
+|Response header|Description|  
+|---------------------|-----------------|  
+|`x-ms-request-id`|This header uniquely identifies the request that was made and can be used for troubleshooting the request. For more information, see [Troubleshooting API Operations](../StorageServicesREST/Troubleshooting-API-Operations.md).|  
+|`x-ms-version`|Indicates the version of the Table service used to execute the request. This header is returned for requests made against version 2009-09-19 and later.|  
+|`Date`|A UTC date/time value generated by the service that indicates the time at which the response was initiated.|  
+  
+### Response Body  
+ None.  
+  
+## Authorization  
+ Only the account owner may call this operation.  
+  
+## Remarks  
+ When a table is successfully deleted, it is immediately marked for deletion and is no longer accessible to clients. The table is later removed from the Table service during garbage collection.  
+  
+ Note that deleting a table is likely to take at least 40 seconds to complete. If an operation is attempted against the table while it was being deleted, the service returns status code 409 (Conflict), with additional error information indicating that the table is being deleted.  
+  
+## See Also  
+ [Table Service Error Codes](../StorageServicesREST/Table-Service-Error-Codes.md)   
+ [Setting the OData Data Service Version Headers](../StorageServicesREST/Setting-the-OData-Data-Service-Version-Headers.md)   
+ [Authentication for the Azure Storage Services](../StorageServicesREST/Authentication-for-the-Azure-Storage-Services.md)   
+ [Status and Error Codes](../StorageServicesREST/Status-and-Error-Codes2.md)

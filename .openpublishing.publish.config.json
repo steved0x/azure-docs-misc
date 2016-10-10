@@ -16,6 +16,20 @@
         "RestApi": "Content"
       },
       "template_folder": "_themes"
+    },
+    {
+      "docset_name": "query-ref",
+      "build_source_folder": "query-ref",
+      "build_output_subfolder": "azure-docs-misc/query-ref",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],

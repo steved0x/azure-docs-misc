@@ -30,6 +30,20 @@
         "RestApi": "Content"
       },
       "template_folder": "_themes"
+    },
+    {
+      "docset_name": "rest-conceptual",
+      "build_source_folder": "rest-conceptual",
+      "build_output_subfolder": "azure-docs-misc/rest-conceptual",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],

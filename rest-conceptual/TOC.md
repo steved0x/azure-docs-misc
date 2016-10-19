@@ -2,8 +2,6 @@
 # [Data Catalog](./AzureDataCatalogREST/TOC.md)
 # [Express Route](./AzureExpressRouteREST/TOC.md)
 # [Data Factory](./DataFactoryREST/TOC.md)
-# [HD Insight](./HDInsightREST/TOC.md)
-# [HD Insight Spark](./HDInsightSparkREST/TOC.md)
 # [Media Services Connector](./MediaServicesConnectorREST/TOC.md)
 # [Storage Import Export](./StorageImportExportREST/TOC.md)
 # [Storage Services](./StorageServicesREST/TOC.md)

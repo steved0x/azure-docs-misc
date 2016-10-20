@@ -102,7 +102,7 @@ Creates or updates an ExpressRoute circuit.
   
  The operation URI can be queried to find the current state of the operation.
 
-## Delete ExpressRoute Circuit
+## Delete
 Deletes an Express Route circuit.  
   
 ### Request  

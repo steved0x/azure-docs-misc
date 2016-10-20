@@ -2,7 +2,7 @@
 # [Dataset](DataFactoryREST/data-factory-dataset.md)
 # [Gateway](DataFactoryREST/data-factory-gateway.md)
 # [Hub](DataFactoryREST/data-factory-hub.md)
-# [](DataFactoryREST/.md)
+# [Linked service](DataFactoryREST/data-factory-linked-service.md)
 # [](DataFactoryREST/.md)
 # [](DataFactoryREST/.md)
 # [](DataFactoryREST/.md)

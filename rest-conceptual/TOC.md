@@ -1,6 +1,6 @@
 # [API Management](./ApiManagementREST/TOC.md)
 # [Data Catalog](./AzureDataCatalogREST/TOC.md)
-# [Express Route](./AzureExpressRouteREST/TOC.md)
+# [ExpressRoute](./AzureExpressRouteREST/TOC.md)
 # [Data Factory](./DataFactoryREST/TOC.md)
 # [Media Services Connector](./MediaServicesConnectorREST/TOC.md)
 # [Storage Import Export](./StorageImportExportREST/TOC.md)

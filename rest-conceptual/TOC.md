@@ -1,4 +1,3 @@
-# [API Management](./ApiManagementREST/TOC.md)
 # [Data Catalog](./AzureDataCatalogREST/TOC.md)
 # [ExpressRoute](./AzureExpressRouteREST/TOC.md)
 # [Data Factory](./DataFactoryREST/TOC.md)

@@ -1,6 +1,5 @@
-# [Playback](MediaServicesConnectorREST/Playback.md)
-# [Media Services Connector REST](MediaServicesConnectorREST/Media-Services-Connector-REST.md)
-# [Azure Media Services Connector REST API Reference](MediaServicesConnectorREST/Azure-Media-Services-Connector-REST-API-Reference.md)
-# [Formats](MediaServicesConnectorREST/Formats.md)
-# [Video](MediaServicesConnectorREST/Video.md)
-# [Thumbnail](MediaServicesConnectorREST/Thumbnail.md)
+# [Formats](MediaServicesConnectorREST/azure-media-services-connector-formats.md)
+# [Playback](MediaServicesConnectorREST/azure-media-services-connector-playback.md)
+# [Thumbnail](MediaServicesConnectorREST/azure-media-services-connector-thumbnail.md)
+# [Video](MediaServicesConnectorREST/azure-media-services-connector-video.md)
+

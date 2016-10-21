@@ -27,6 +27,7 @@ translation.priority.mt:
 # Abort Copy Blob
 The `Abort Copy Blob` operation aborts a pending `Copy Blob` operation, and leaves a destination blob with zero length and full metadata. Version 2012-02-12 and newer.  
   
+
 ## Request  
  Construct the `Abort Copy Blob` as follows. HTTPS is recommended. Replace `myaccount` with the name of your storage account, `mycontainer` with the name of your container, `myblob` with the name of your destination blob, and `<id>` with the copy identifier provided in the `x-ms-copy-id` header of the original `Copy Blob` operation.  
   

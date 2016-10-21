@@ -1,7 +1,6 @@
 # [Data Catalog](./AzureDataCatalogREST/TOC.md)
 # [ExpressRoute](./AzureExpressRouteREST/TOC.md)
 # [Data Factory](./DataFactoryREST/TOC.md)
-# [Media Services Connector](./MediaServicesConnectorREST/TOC.md)
 # [Storage Import Export](./StorageImportExportREST/TOC.md)
 # [Storage Services](./StorageServicesREST/TOC.md)
 # [Stream Analytics](./StreamAnalyticsREST/TOC.md)

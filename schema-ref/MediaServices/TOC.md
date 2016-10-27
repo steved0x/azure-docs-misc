@@ -31,9 +31,6 @@
 ## [Task Preset for Azure Media Packager](MediaServices/Task-Preset-for-Azure-Media-Packager.md)
 ## [Task Preset for Azure Media Indexer](MediaServices/Task-Preset-for-Azure-Media-Indexer.md)
 ## [Task Preset for Azure Media Hyperlapse (preview)](MediaServices/Task-Preset-for-Azure-Media-Hyperlapse--preview-.md)
-# [Azure Media Services Schemas](MediaServices/AMS-Schemas.md)
-## [Media Encoder Standard Schema](MediaServices/Media-Encoder-Standard-Schema.md)
-## [Output Metadata](MediaServices/Output-Metadata.md)
-## [Input Metadata](MediaServices/Input-Metadata.md)
+
 
 

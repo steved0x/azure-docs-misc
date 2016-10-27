@@ -1,5 +1,5 @@
 ---
-title: "TaskNotificationSubscription2"
+title: "TaskNotificationSubscription"
 ms.custom: ""
 ms.date: "2016-07-14"
 ms.prod: "azure"

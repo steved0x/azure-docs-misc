@@ -110,7 +110,7 @@ Submit a new batch job from a jar.
 |------------|-----------------|  
 |GET|`https://{cluster-endpoint}/livy/batches/{batch-id}`|  
   
-## Response  
+### Response  
  If validation is complete and the request is accepted, the operation will return 200 (OK).  
   
  Status code: 200 OK  

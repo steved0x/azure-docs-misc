@@ -14,10 +14,13 @@
             "it-it",
             "ja-jp",
             "ko-kr",
-            "pt-br",
             "ru-ru",
             "zh-cn",
-            "zh-tw"
+            "zh-tw",
+            "cs-cz",
+            "pl-pl",
+            "pt-br",
+            "tr-tr"
           ],
           "Type": "ht"
         }

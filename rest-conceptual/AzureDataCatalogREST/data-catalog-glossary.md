@@ -90,7 +90,8 @@ application/json
 x-ms-request-id: 1095e88c…caffabd6dabd  
 
 
-## EnumerateEnumerate all terms in a glossary. 
+## Enumerate
+Enumerate all terms in a glossary. 
  
 
 ### Request  

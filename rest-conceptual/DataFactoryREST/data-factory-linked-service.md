@@ -190,7 +190,7 @@ client-tracking-id            : 15
   
   
 
-# Delete
+## Delete
 Deletes the specific linked service.  
   
 ### Request  

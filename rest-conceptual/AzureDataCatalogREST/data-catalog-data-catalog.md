@@ -1,6 +1,6 @@
 # Data Catalog
 
-# Create or Update Catalog
+## Create or Update
 Creates or updates a catalog.  
   
 **Required**  
@@ -8,10 +8,10 @@ Creates or updates a catalog.
 Azure Resource Manager requests must be **Authorized**, see [Authenticating Azure Resource Manager requests](https://msdn.microsoft.com/library/azure/dn790557.aspx).  
   
   
-## Request  
+### Request  
     PUT https://management.azure.com/subscriptions/<subscriptionId>/resourceGroups/<resouceGroup>/providers/Microsoft.DataCatalog/catalogs/<catalogName>  
   
-### Uri parameters  
+#### Uri parameters  
 |Name|Description|Data Type  
 |---|---|---  
 | subscriptionId | Subscription to provision the catalog into.|String  
@@ -19,7 +19,7 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
 |catalogName|Name of the catalog.|String  
   
   
-### Header  
+#### Header  
   
 |Name|Value  
 |---|---  
@@ -45,9 +45,9 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
         }  
     }  
   
-## Response  
+### Response  
   
-### Status codes  
+#### Status codes  
   
 |**Code**|**Description**  
 |---|---  
@@ -55,7 +55,7 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
 |400 | Bad request.  
   
   
-### Example Response Header  
+#### Example Response Header  
   
 |Name|Value  
 |---|---  
@@ -67,7 +67,7 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
 |ETag|W/"AAAAAAABQIE="  
 |Expires|-1  
   
-### Response body properties  
+#### Response body properties  
   
 |Name| Description  
 |---|---  
@@ -78,7 +78,7 @@ Admins| List of catalog administrators: <br/> - upn: Universal Principal Name of
 Users| list of catalog users: <br/> - upn/objectId same as above  
   
   
-### Example Response Body  
+#### Example Response Body  
   
     {  
       "id": "/subscriptions/99999999-9999-…-999999999999/resourceGroups/myRG/providers/Microsoft.DataCatalog/catalogs/ExtractorStore1",  
@@ -110,7 +110,7 @@ Users| list of catalog users: <br/> - upn/objectId same as above
     }  
 
 
-# Delete Catalog
+## Delete
 Deletes a catalog.  
   
 **Required**  
@@ -119,15 +119,15 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
   
     DELETE https://management.azure.com/subscriptions/<subscriptionId>/resourceGroups/<rgName>/providers/Microsoft.DataCatalog/catalogs/<catalogName>  
   
-## Request  
+### Request  
   
-### Headers  
+#### Headers  
 None  
   
-### Body Example  
+#### Body Example  
 None  
   
-### Example Response Headers  
+#### Example Response Headers  
 |Name|Value  
 |---|---  
 |Access-Control-Allow-Origin|*,*  
@@ -137,9 +137,9 @@ None
 |Date|Wed,02 Mar 2016 01:42:46 GMT  
 |Expires|-1  
   
-## Response  
+### Response  
   
-### Status codes  
+#### Status codes  
 |**Code**|**Description**  
 |---|---  
 |200|OK. An existing annotation was updated.  
@@ -148,7 +148,7 @@ None
 |400 | Bad request.  
 
 
-# Get Catalog
+## Get
 Gets a catalog.  
   
 **Required**  
@@ -157,26 +157,26 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
   
     GET https://management.azure.com/subscriptions/<subscriptionId>/resourceGroups/<resouceGroup>/providers/Microsoft.DataCatalog/catalogs/<catalogName>  
   
-### Uri parameters  
+#### Uri parameters  
 |Name|Description|Data Type  
 |---|---|---  
 | subscriptionId | Subscription to provision the catalog into.|String  
 | resouceGroup | All resources need to be put into a group. See [Resource groups].(https://azure.microsoft.com/documentation/articles/resource-group-overview)|String  
 |catalogName|Name of the catalog.|String  
   
-## Request  
+### Request  
   
-### Header  
+#### Header  
   
 |Name|Value  
 |---|---  
 |Content-Type|application/json  
   
-### Body Example  
+#### Body Example  
 None  
   
   
-### Example Response Headers  
+#### Example Response Headers  
   
 |Name|Value  
 |---|---  
@@ -188,7 +188,7 @@ None
 |ETag|W/"AAAAAAABQIE="  
 |Expires|-1  
   
-### Response body properties  
+#### Response body properties  
   
 |Name| Description  
 |---|---  
@@ -198,7 +198,7 @@ enableAutomaticUnitAdjustment| Noolean setting which determines if units should 
 Admins| List of catalog administrators: <br/> - upn: Universal Principal Name of the account <br/> - objectId: Azure Active Directory Object ID of the account <br/>  
 Users| list of catalog users: <br/> - upn/objectId same as above  
   
-### Example Response Body  
+#### Example Response Body  
   
     {  
       "id": "/subscriptions/99999999-…-999999999999/resourceGroups/myRG/providers/Microsoft.DataCatalog/catalogs/ExtractorStore1",  
@@ -226,8 +226,8 @@ Users| list of catalog users: <br/> - upn/objectId same as above
     }  
 
 
-# Get All Catalogs
-Gets all catalogs.  
+## List
+lists all catalogs.  
   
 **Required**  
   
@@ -235,23 +235,23 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
   
     GET https://management.azure.com/subscriptions/<subscriptionId>/resourceGroups/<resouceGroup>/providers/Microsoft.DataCatalog/catalogs  
   
-### Uri parameters  
+#### Uri parameters  
 |Name|Description|Data Type  
 |---|---|---  
 | subscriptionId | Subscription to provision the catalog into.|String  
 | resouceGroup | All resources need to be put into a group. See [Resource groups].(https://azure.microsoft.com/documentation/articles/resource-group-overview)|String  
   
-## Request  
-### Header  
+### Request  
+#### Header  
   
 |Name|Value  
 |---|---  
 |Content-Type|application/json  
   
-### Body Example  
+#### Body Example  
 None  
   
-### Example Response Headers  
+#### Example Response Headers  
   
 |Name|Value  
 |---|---  
@@ -262,7 +262,7 @@ None
 |Date|Wed,02 Mar 2016 01:42:46 GMT  
 |Expires|-1  
   
-### Response body properties  
+#### Response body properties  
   
 |Name| Description  
 |---|---  
@@ -272,7 +272,7 @@ enableAutomaticUnitAdjustment| Noolean setting which determines if units should 
 Admins| List of catalog administrators: <br/> - upn: Universal Principal Name of the account <br/> - objectId: Azure Active Directory Object ID of the account <br/>  
 Users| list of catalog users: <br/> - upn/objectId same as above  
   
-### Example Response Body  
+#### Example Response Body  
   
     {  
       "value": [  
@@ -305,7 +305,7 @@ Users| list of catalog users: <br/> - upn/objectId same as above
     }  
 
 
-# Update Catalog
+## Update
 Updates a Catalog.  
   
 **Required**  
@@ -314,7 +314,7 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
   
     PATCH https://management.azure.com/subscriptions/<subscriptionId>/resourceGroups/<resouceGroup>/providers/Microsoft.DataCatalog/catalogs/<catalogName>  
   
-### Uri parameters  
+#### Uri parameters  
 |Name|Description|Data Type  
 |---|---|---  
 | subscriptionId | Subscription to provision the catalog into.|String  
@@ -322,21 +322,21 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
 |catalogName|Name of the catalog.|String  
   
   
-## Request  
+### Request  
   
 |Name|Value  
 |---|---  
 |Content-Type|application/json  
   
   
-## Body Example  
+### Body Example  
     {  
         "properties" : {  
            "admins" : [{"upn" : "myupn@google.com", "objectId" : "99999999-…-999999999999"}],  
         }  
     }  
   
-## Response  
+### Response  
   
 |**Code**|**Description**  
 |---|---  
@@ -344,7 +344,7 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
 |400 | Bad request.  
   
   
-### Example Response Header  
+#### Example Response Header  
   
 |Name|Value  
 |---|---  
@@ -357,7 +357,7 @@ Azure Resource Manager requests must be **Authorized**, see [Authenticating Azur
 |Expires|-1  
   
   
-### Response body properties  
+#### Response body properties  
   
 |Name| Description  
 |---|---  
@@ -367,7 +367,7 @@ enableAutomaticUnitAdjustment| Noolean setting which determines if units should 
 Admins| List of catalog administrators: <br/> - upn: Universal Principal Name of the account <br/> - objectId: Azure Active Directory Object ID of the account <br/>  
 Users| list of catalog users: <br/> - upn/objectId same as above  
   
-### Example Response Body  
+#### Example Response Body  
   
     {  
       "id": "/subscriptions/99999999-…-999999999999/resourceGroups/myRG/providers/Microsoft.DataCatalog/catalogs/ExtractorStore1",  

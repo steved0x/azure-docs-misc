@@ -636,12 +636,11 @@ Content-Type:   application/json; charset=utf-8
 
 
 ## Search
-Ssearches over data assets based on the search terms provided. 
+Searches over data assets based on the search terms provided. 
  
 
 
-#
-## Request  
+### Request  
 	GET https://api.azuredatacatalog.com/catalogs/{catalog_name}/search/search?api-version={api-version}&searchTerms={search_terms}&facets={facet_terms}&startPage={start_page}&count={count}&view={data_source}  
   
 > [AZURE.NOTE] Some HTTP client implementations may automatically re-issue requests in response to a 302 from the server, but typically strip **Authorization headers** from the request. Since the Authorization header is required to make requests to ADC, you must ensure the Authorization header is still provided when re-issuing a request to a redirect location specified by ADC. Below is sample code demonstrating this using the .NET HttpWebRequest object.  

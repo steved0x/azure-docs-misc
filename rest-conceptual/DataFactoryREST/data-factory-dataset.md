@@ -234,7 +234,8 @@ Body:
 }  
   
 ```  
-  
+ 
+## Delete 
 Deletes the specified dataset.  
   
 ### Request  

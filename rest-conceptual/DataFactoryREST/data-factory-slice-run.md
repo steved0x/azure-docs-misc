@@ -263,7 +263,7 @@ Downloads log files from HDInsight processing.
 |RunID|First part of your full RunID.|  
 |RunInfo|Include start date time and end date time of this run.|  
   
-## Sample Request and Response  
+### Sample Request and Response  
  Example URI:  
   
 ```  

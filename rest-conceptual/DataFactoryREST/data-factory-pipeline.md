@@ -704,7 +704,7 @@ If there are more than 100 records, you will get 100 records at a time with a ne
 ```  
 You send the next request using the **nextLink** URL to get the next set of records. You may need to wrap & with double quotes ("") in the nextLink URL. Only 100 records are returned at a time. 
   
-## Sample Request and Response  
+### Sample Request and Response  
  Example URI:  
   
 ```  
